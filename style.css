@@ -1,0 +1,1581 @@
+/* =====================================================
+   DIVINE INDIA - TEMPLE TOURISM WEBSITE
+   Main Stylesheet
+   ===================================================== */
+
+
+/* =====================
+   GOOGLE FONT IMPORT
+   ===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =====================
+   ROOT VARIABLES
+   ===================== */
+
+:root {
+
+    --primary: #8b4513;
+    --primary-dark: #5f2d0b;
+
+    --gold: #c6923b;
+    --gold-light: #e4bd70;
+
+    --cream: #fbf7ef;
+    --cream-dark: #f1e8d8;
+
+    --white: #ffffff;
+
+    --dark: #21170f;
+    --text: #66584c;
+    --light-text: #8b7b6d;
+
+    --border: #e8ddcc;
+
+    --shadow:
+        0 15px 40px rgba(58, 38, 20, 0.10);
+
+    --transition: 0.35s ease;
+}
+
+
+/* =====================
+   BASIC RESET
+   ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: var(--cream);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* =====================
+   COMMON SECTION
+   ===================== */
+
+.section {
+
+    padding: 110px 7%;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+}
+
+
+.section-label {
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+
+.section-heading h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(42px, 5vw, 62px);
+
+    line-height: 1.05;
+
+    color: var(--dark);
+
+    font-weight: 700;
+}
+
+
+.section-heading h2 span {
+
+    color: var(--gold);
+
+    display: block;
+}
+
+
+.heading-line {
+
+    width: 60px;
+
+    height: 3px;
+
+    background: var(--gold);
+
+    margin: 25px auto;
+}
+
+
+.section-description {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--light-text);
+
+    font-size: 15px;
+}
+
+
+/* =====================
+   HEADER / NAVBAR
+   ===================== */
+
+.header {
+
+    position: absolute;
+
+    width: 100%;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+.navbar {
+
+    width: 86%;
+
+    max-width: 1300px;
+
+    margin: 25px auto;
+
+    padding: 15px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: rgba(25, 17, 10, 0.55);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 50px;
+}
+
+.exp{
+    display: none
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+
+.logo-icon {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-family: serif;
+
+    font-size: 20px;
+}
+
+
+.gold {
+    color: var(--gold-light);
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: var(--transition);
+}
+
+
+.nav-links a:hover {
+    color: var(--gold-light);
+}
+
+
+.nav-button {
+
+    padding: 10px 20px;
+
+    background: var(--gold);
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.nav-button:hover {
+
+    background: white;
+
+    color: var(--primary);
+}
+
+
+/* =====================
+   HERO
+   ===================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(25, 15, 8, 0.48),
+            rgba(25, 15, 8, 0.72)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            transparent 0%,
+            rgba(20, 10, 5, 0.35) 100%
+        );
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    padding: 100px 25px 50px;
+
+    color: white;
+}
+
+
+.hero-small {
+
+    color: var(--gold-light);
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+
+.hero-small i {
+    margin-right: 7px;
+}
+
+
+.hero h1 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(55px, 8vw, 95px);
+
+    line-height: 0.95;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--gold-light);
+}
+
+
+.hero-description {
+
+    max-width: 680px;
+
+    margin: auto;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 16px;
+
+    font-weight: 300;
+}
+
+
+.hero-buttons {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.primary-button,
+.secondary-button {
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.primary-button {
+
+    background: var(--gold);
+
+    color: white;
+}
+
+
+.primary-button:hover {
+
+    background: white;
+
+    color: var(--primary);
+
+    transform: translateY(-3px);
+}
+
+
+.secondary-button {
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: white;
+}
+
+
+.secondary-button:hover {
+
+    background: white;
+
+    color: var(--primary);
+
+    transform: translateY(-3px);
+}
+
+
+.scroll-down {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================
+   ABOUT
+   ===================== */
+
+.about {
+
+    background: var(--cream);
+}
+
+
+.about-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.about-image {
+
+    position: relative;
+
+    padding: 15px;
+}
+
+
+.about-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+
+    height: 70%;
+
+    border: 2px solid var(--gold);
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 0;
+}
+
+
+.about-image img {
+
+    position: relative;
+
+    z-index: 1;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    box-shadow: var(--shadow);
+}
+
+
+.about-content .large-text {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 27px;
+
+    line-height: 1.35;
+
+    color: var(--dark);
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+
+.about-content > p {
+
+    margin-bottom: 17px;
+
+    font-size: 14px;
+}
+
+
+.about-stats {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.stat {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.stat strong {
+
+    color: var(--gold);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 36px;
+
+    line-height: 1;
+}
+
+
+.stat span {
+
+    font-size: 11px;
+
+    color: var(--light-text);
+
+    margin-top: 6px;
+}
+
+
+/* =====================
+   TEMPLE SECTION
+   ===================== */
+
+.temples {
+
+    background: #f5eee3;
+}
+
+
+.temple-grid {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.temple-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(50, 30, 10, 0.05);
+
+    transition: var(--transition);
+}
+
+
+.temple-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+}
+
+
+/* CARD IMAGE */
+
+.card-image {
+
+    height: 290px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.card-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+.temple-card:hover .card-image img {
+
+    transform: scale(1.06);
+}
+
+
+.temple-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    width: 43px;
+
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(30, 18, 8, 0.75);
+
+    backdrop-filter: blur(5px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+
+.state-tag {
+
+    position: absolute;
+
+    right: 15px;
+
+    bottom: 15px;
+
+    background: white;
+
+    color: var(--primary);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* CARD CONTENT */
+
+.card-content {
+
+    padding: 27px;
+}
+
+
+.card-content h3 {
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 31px;
+
+    line-height: 1.1;
+
+    margin-bottom: 7px;
+}
+
+
+.location {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+
+.location i {
+
+    margin-right: 5px;
+}
+
+
+.card-content > p:not(.location) {
+
+    font-size: 13px;
+
+    color: var(--text);
+
+    margin-bottom: 20px;
+}
+
+
+.temple-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    margin-bottom: 18px;
+}
+
+
+.temple-info div {
+
+    padding: 12px 8px;
+}
+
+
+.temple-info div + div {
+
+    border-left: 1px solid var(--border);
+
+    padding-left: 15px;
+}
+
+
+.temple-info span {
+
+    display: block;
+
+    color: var(--light-text);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.temple-info strong {
+
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+
+.learn-more {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--primary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    transition: var(--transition);
+}
+
+
+.learn-more:hover {
+
+    color: var(--gold);
+
+    gap: 12px;
+}
+
+
+/* =====================
+   TRAVEL GUIDE
+   ===================== */
+
+.travel {
+
+    background: var(--cream);
+}
+
+
+.travel-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.travel-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+
+    transition: var(--transition);
+}
+
+
+.travel-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+
+.travel-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f6ead7;
+
+    color: var(--gold);
+
+    font-size: 22px;
+}
+
+
+.travel-card h3 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 25px;
+
+    color: var(--dark);
+
+    margin-bottom: 10px;
+}
+
+
+.travel-card p {
+
+    font-size: 12px;
+
+    color: var(--light-text);
+}
+
+
+/* =====================
+   ETIQUETTE
+   ===================== */
+
+.etiquette {
+
+    background: #2b1c12;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.etiquette-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.etiquette-heading h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: white;
+
+    font-size: 58px;
+
+    line-height: 1;
+}
+
+
+.etiquette-heading h2 span {
+
+    color: var(--gold-light);
+}
+
+
+.etiquette-heading p:last-child {
+
+    margin-top: 20px;
+
+    font-size: 13px;
+}
+
+
+.etiquette-list {
+
+    display: grid;
+
+    gap: 20px;
+}
+
+
+.etiquette-item {
+
+    display: flex;
+
+    gap: 18px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.check {
+
+    min-width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(198, 146, 59, 0.18);
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+}
+
+
+.etiquette-item h4 {
+
+    color: white;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+
+.etiquette-item p {
+
+    font-size: 11px;
+}
+
+
+/* =====================
+   QUOTE
+   ===================== */
+
+.quote-section {
+
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            rgba(95, 45, 11, 0.84),
+            rgba(95, 45, 11, 0.84)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.quote-content {
+
+    max-width: 800px;
+
+    color: white;
+}
+
+
+.quote-icon {
+
+    color: var(--gold-light);
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+
+.quote-content h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(35px, 5vw, 55px);
+
+    line-height: 1.1;
+}
+
+
+.quote-content p {
+
+    margin-top: 25px;
+
+    color: var(--gold-light);
+
+    letter-spacing: 3px;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.footer {
+
+    background: #170f09;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    padding-top: 70px;
+}
+
+
+.footer-container {
+
+    width: 86%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+
+.footer-brand p {
+
+    margin-top: 20px;
+
+    max-width: 300px;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+.footer-links,
+.footer-contact {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer h4 {
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-links a {
+
+    font-size: 11px;
+
+    transition: var(--transition);
+}
+
+
+.footer-links a:hover {
+
+    color: var(--gold-light);
+}
+
+
+.footer-contact p {
+
+    font-size: 11px;
+}
+
+
+.footer-contact i {
+
+    width: 18px;
+
+    color: var(--gold);
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    width: 86%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 9px;
+}
+
+
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    .travel-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* SMALL TABLETS */
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        width: 92%;
+    }
+
+
+    .nav-links {
+
+        display: none;
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .about-image img {
+
+        height: 400px;
+    }
+
+
+    .temple-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .etiquette-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .section {
+
+        padding: 75px 5%;
+    }
+
+
+    .navbar {
+
+        padding: 12px 15px;
+    }
+
+
+    .logo {
+
+        font-size: 18px;
+    }
+
+
+    .logo-icon {
+
+        width: 32px;
+
+        height: 32px;
+    }
+
+
+    .nav-button {
+
+        padding: 8px 14px;
+
+        font-size: 11px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+    }
+
+
+    .hero-description {
+
+        font-size: 13px;
+    }
+
+
+    .hero-small {
+
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 45px;
+    }
+
+
+    .about-image {
+
+        padding: 8px;
+    }
+
+
+    .about-image img {
+
+        height: 350px;
+    }
+
+
+    .about-stats {
+
+        gap: 20px;
+    }
+
+
+    .stat strong {
+
+        font-size: 30px;
+    }
+
+
+    .card-image {
+
+        height: 250px;
+    }
+
+
+    .card-content {
+
+        padding: 22px;
+    }
+
+
+    .card-content h3 {
+
+        font-size: 27px;
+    }
+
+
+    .travel-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .etiquette-heading h2 {
+
+        font-size: 48px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+
+        font-size: 45px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .primary-button,
+    .secondary-button {
+
+        text-align: center;
+    }
+
+
+    .temple-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .temple-info div + div {
+
+        border-left: none;
+
+        border-top: 1px solid var(--border);
+
+        padding-left: 8px;
+    }
+
+}
