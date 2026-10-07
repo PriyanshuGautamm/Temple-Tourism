@@ -1,19 +1,6 @@
-/* =====================================================
-   DIVINE INDIA - TEMPLE TOURISM WEBSITE
-   Main Stylesheet
-   ===================================================== */
-
-
-/* =====================
-   GOOGLE FONT IMPORT
-   ===================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
-/* =====================
-   ROOT VARIABLES
-   ===================== */
 
 :root {
 
@@ -41,9 +28,6 @@
 }
 
 
-/* =====================
-   BASIC RESET
-   ===================== */
 
 * {
     margin: 0;
@@ -88,9 +72,6 @@ ul {
 }
 
 
-/* =====================
-   COMMON SECTION
-   ===================== */
 
 .section {
 
@@ -170,9 +151,6 @@ ul {
 }
 
 
-/* =====================
-   HEADER / NAVBAR
-   ===================== */
 
 .header {
 
@@ -217,8 +195,6 @@ ul {
     display: none
 }
 
-
-/* LOGO */
 
 .logo {
 
@@ -265,7 +241,6 @@ ul {
 }
 
 
-/* NAV LINKS */
 
 .nav-links {
 
@@ -320,9 +295,6 @@ ul {
 }
 
 
-/* =====================
-   HERO
-   ===================== */
 
 .hero {
 
@@ -528,9 +500,6 @@ ul {
 }
 
 
-/* =====================
-   ABOUT
-   ===================== */
 
 .about {
 
@@ -666,9 +635,6 @@ ul {
 }
 
 
-/* =====================
-   TEMPLE SECTION
-   ===================== */
 
 .temples {
 
@@ -714,7 +680,6 @@ ul {
 }
 
 
-/* CARD IMAGE */
 
 .card-image {
 
@@ -806,7 +771,6 @@ ul {
 }
 
 
-/* CARD CONTENT */
 
 .card-content {
 
@@ -940,9 +904,6 @@ ul {
 }
 
 
-/* =====================
-   TRAVEL GUIDE
-   ===================== */
 
 .travel {
 
@@ -1030,9 +991,6 @@ ul {
 }
 
 
-/* =====================
-   ETIQUETTE
-   ===================== */
 
 .etiquette {
 
@@ -1142,9 +1100,6 @@ ul {
 }
 
 
-/* =====================
-   QUOTE
-   ===================== */
 
 .quote-section {
 
@@ -1215,9 +1170,6 @@ ul {
 }
 
 
-/* =====================
-   FOOTER
-   ===================== */
 
 .footer {
 
@@ -1328,12 +1280,8 @@ ul {
 }
 
 
-/* =====================
-   RESPONSIVE DESIGN
-   ===================== */
 
 
-/* TABLETS */
 
 @media (max-width: 1000px) {
 
@@ -1356,7 +1304,6 @@ ul {
 }
 
 
-/* SMALL TABLETS */
 
 @media (max-width: 800px) {
 
@@ -1402,7 +1349,6 @@ ul {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 600px) {
 
@@ -1538,7 +1484,6 @@ ul {
 }
 
 
-/* VERY SMALL PHONES */
 
 @media (max-width: 380px) {
 
